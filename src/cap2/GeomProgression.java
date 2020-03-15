@@ -1,3 +1,4 @@
+package cap2;
 /**
  * Geometric Progression
  */

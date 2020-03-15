@@ -1,3 +1,4 @@
+package cap2;
 
 public abstract class Progression {
 	/** Primeiro valor da progressão. */
