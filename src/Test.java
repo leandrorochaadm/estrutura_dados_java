@@ -19,7 +19,7 @@ public class Test {
 		Progression pg = new GeomProgression();
 		pg.printProgression(n);
 
-		System.out.println("*** Progressão fiboncci");
+		System.out.println("*** Progressão Fiboncci");
 		Progression pf = new FibonacciProgression();
 		pf.printProgression(n);
 	}
