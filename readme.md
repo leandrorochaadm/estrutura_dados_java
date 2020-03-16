@@ -1,8 +1,8 @@
 # Leia-me
 
-**Exercicios de algoritmo sobre do livro "Estrututura de dados e Algoritmo em Java, Michel T. Goodrich ed.5" do cap. 2**
+Exercícios de algoritmo sobre do livro **Estrututura de dados e Algoritmo em Java, Michel T. Goodrich ed.5**
 
-__Progressões__
+__Cap.2 - Progressões__
 * Aritmética
 * Geométrica
 * Fibonacci
