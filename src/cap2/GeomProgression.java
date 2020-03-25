@@ -1,25 +1,29 @@
+package cap2;
+
+import java.math.BigDecimal;
+
 /**
  * Geometric Progression
  */
 class GeomProgression extends Progression {
 
   /** Base. */
-  protected long base;
+  protected BigDecimal base;
 
   // Inherits variables first and cur.
 
   /** Default constructor setting base 2. */
   GeomProgression() {
-    this(2);
+    this(new BigDecimal(2));
   }
 
   /** Parametric constructor providing the base.
    *
    * @param b base of the progression.
    */
-  GeomProgression(long b) {
+  GeomProgression(BigDecimal b) {
     base = b;
-    first = 1;
+    first = new BigDecimal(1);
     cur = first;
   }
 
@@ -27,8 +31,8 @@ class GeomProgression extends Progression {
    * 
    * @return next value of the progression
    */
-  protected long nextValue() {
-    cur *= base;
+  protected BigDecimal nextValue() {
+   cur = cur.multiply(base);
     return cur;
   }
 

@@ -1,20 +1,24 @@
+package cap2;
+
+import java.math.BigDecimal;
+
 /**
  * Arithmetic progression.
  */
 class ArithProgression extends Progression {
 
   /** Increment. */
-  protected long inc;
+  protected BigDecimal inc;
 
   // Inherits variables first and cur.
 
   /** Default constructor setting a unit increment. */
   ArithProgression() {
-    this(1);
+    this(new BigDecimal(1));
   }
 
   /** Parametric constructor providing the increment. */
-  ArithProgression(long increment) {
+  ArithProgression(BigDecimal increment) {
     inc = increment; 
   }
 
@@ -22,8 +26,11 @@ class ArithProgression extends Progression {
    * 
    * @return next value of the progression
    */
-  protected long nextValue() {
-    cur += inc;
+  protected BigDecimal nextValue() {
+//	System.out.println(cur);
+//    System.out.println(inc);
+//    System.out.println(cur.add(inc));
+    cur = cur.add(inc);
     return cur;
   }
 

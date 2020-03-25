@@ -1,21 +1,24 @@
+package cap2;
+
+import java.math.BigDecimal;
 
 public abstract class Progression {
 	/** Primeiro valor da progressão. */
-	protected long first;
+	protected BigDecimal first;
 	
 	/** Valor atual da progressão. */
-	protected long cur;
+	protected BigDecimal cur;
 	
 	/** construtor default. */
 	Progression(){
-		cur = first = 0;
+		cur = first =  new BigDecimal(0);
 	}
 	
 	/**
 	 * Reinicializa a progressão com o valor inicial.
 	 * @return valor inicial
 	 */
-	protected long firstValue() {
+	protected BigDecimal firstValue() {
 	cur = first;
 	return cur;
 	}
@@ -26,7 +29,7 @@ public abstract class Progression {
 	 * @return próximo valor da progressão.
 	 */
 	
-	protected abstract long nextValue(); /*{
+	protected abstract BigDecimal nextValue(); /*{
 		return ++cur; //próximo valor default.
 	}*/
 	
@@ -36,7 +39,8 @@ public abstract class Progression {
 	 */
 	public void printProgression(long n) {
 		System.out.println(firstValue());
-		for (int i = 2; i < n; i++) {
+		
+		for (long i = 1; i<n ; i++ ) {
 			System.out.println(nextValue());
 //			System.out.println(); //termina a linha
 		}
