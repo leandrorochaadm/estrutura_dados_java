@@ -1,7 +1,7 @@
 package cap2;
 
 import java.util.Scanner;
-
+ 
 public class Test {
 
 //	private static final long n = Long.parseLong(System.console().readLine());
